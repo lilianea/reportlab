@@ -56,6 +56,7 @@ class MyPrint:
         header.drawOn(canvas, doc.width + doc.rightMargin - w,
                       doc.pagesize[1] - 2*cm)
         # Footer
+        # TODO: page number of all pages - nice to have!
         footer = Paragraph(str(canvas._pageNumber), ss['right'])
         w, h = footer.wrap(doc.width, doc.bottomMargin)
         footer.drawOn(canvas, doc.leftMargin, h + 40)

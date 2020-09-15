@@ -19,6 +19,7 @@ pdf = MyPrint(buffer, 'A4')
 
 # pdf.setFont('Roboto', 36)
 # pdf.drawInlineImage(logo, 400, 700, width=120, preserveAspectRatio=True)
+# TODO: Loop über Monate: füge Texte als Liste (Monate) von Tuplen (Texte) ein.
 data = (['Zeitraum', 'Lastspitze', 'Datum', 'Uhrzeit', 'Wochentag', 'Während\nBoilerzeiten?', 'Boiler-\nfreigabe'],
         ['04-2020', '3305.1', '01.04.20', '01:00:00', 'Mittwoch', 'Ja', '4200'])
 pdf.add_figure('/Users/severin/Desktop/reportlab/images/Exnaton_logo_block.jpg', "")
